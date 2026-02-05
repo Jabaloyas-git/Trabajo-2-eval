@@ -2,8 +2,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f1a33d;
-            color: #eaeaea;
+            background-color: #FF822E;
+            color: #FF822E;
         }
         header {
             background-color: #fff;
@@ -51,7 +51,7 @@
         .logo {
             font-weight: bold;
             font-size: 1.5rem;
-            color: #d35400; 
+            color: #D15400
         }
         nav ul {
             list-style: none;
@@ -64,7 +64,7 @@
         }
         nav ul li a {
             text-decoration: none;
-            color: #d35400;
+            color: #D15400;
             font-weight: bold;
         }
         .sign-in-btn {
@@ -94,6 +94,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+           
         }
         .hero {
             display: flex;
@@ -110,7 +111,7 @@
         }
         .hero-content p {
             font-size: 1.35rem;
-            color: #000000;
+            color: #FFF0E6;
             margin-bottom: 2rem;
             font-weight: 600;
             line-height: 1.6;
@@ -140,10 +141,17 @@
             border-radius: 4px;
             font-weight: bold;
         }
-        h1, h2, h3, h4, h5, h6 {
+        .product-info h3{
             color: #000000 !important;
         }
+        .story-info h3{
+            color: #000000 !important;
+        }   
+        h1, h2, h3{
+            color: #FFF0E6 !important;
+        }
         .section-title {
+            text-align: center;
             font-size: 2rem;
             margin-bottom: 1.5rem;
             color: #000000;
@@ -240,7 +248,7 @@
         .newsletter-inner h2,
         .newsletter-inner .lead,
         .newsletter-inner .small-note {
-            color: #111;
+            color: #111 !important;
         }
         .newsletter h2 {
             margin-bottom: 0.35rem;
@@ -307,6 +315,7 @@
         }
         .footer-column h4 {
             margin-bottom: 1rem;
+        color: #000000 !important;      
         }
         .footer-column ul {
             list-style: none;
@@ -513,4 +522,14 @@
                 margin-top: 2rem;
             }
         }
-
+    
+        .section-title h1 {
+            color: #1A0A00 !important;
+            
+        }
+        .contact-card h3 {
+            color: #1A0A00 !important;
+        }
+        .contact-form-section  {
+            color: #1A0A00 !important;
+        }
