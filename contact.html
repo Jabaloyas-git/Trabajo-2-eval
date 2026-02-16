@@ -4,31 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Re-Toy-Make</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">Re-Toy-Make</a>
-        <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menú">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <nav class="navbar" id="navbar">
-            <ul>
-                <li><a href="index.html">Catálogo</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li class="mobile-sign-in"><a href="#" class="sign-in-btn">Iniciar Sesión</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Re-Toy-Make</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                                Catálogo
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="catalog.html">Ver Todo</a></li>
+                                <li><a class="dropdown-item" href="pets.html">Juguetes para Mascotas</a></li>
+                                <li><a class="dropdown-item" href="seniors.html">Juegos para Mayores</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-session px-4" href="#">Iniciar Sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <a href="#" class="sign-in-btn desktop-sign-in">Iniciar Sesión</a>
     </header>
 
     <main class="container">
         <section class="contact">
             <h1 class="section-title">Contacto</h1>
-            <p>¿Tienes preguntas? Nos encantaría escucharte. Aquí están nuestros datos de contacto.</p>
+            <p class="text-center mb-4">¿Tienes preguntas? Nos encantaría escucharte. Aquí están nuestros datos de contacto.</p>
 
             <div class="contact-info">
                 <div class="contact-card">
@@ -61,16 +79,16 @@
                 <h2>Envíanos un Mensaje</h2>
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="name" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email" class="form-label">Correo Electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensaje:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" class="form-label">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
                     <button type="submit" class="cta-button">Enviar Mensaje</button>
                 </form>
@@ -79,49 +97,29 @@
     </main>
 
     <footer>
-        <div class="container footer-content">
-            <div class="footer-column logo-column">
-                <div class="logo">Re-Toy-Make</div>
-                <p>Juguetería inclusiva para el bienestar de todos.</p>
-            </div>
-            <div class="footer-column">
-                <h4>Categorías</h4>
-                <ul>
-                    <li><a href="pets.html">Para Perros</a></li>
-                    <li><a href="pets.html">Para Gatos</a></li>
-                    <li><a href="seniors.html">Cognitivo Senior</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h4>Información</h4>
-                <ul>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column logo-column">
+                    <strong>Re-Toy-Make</strong>
+                    <p>Juguetería inclusiva para el bienestar de todos.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="catalog.html">Ver Todo</a></li>
+                        <li><a href="pets.html">Para Perros</a></li>
+                        <li><a href="pets.html">Para Gatos</a></li>
+                        <li><a href="seniors.html">Cognitivo Senior</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
-
-    <script>
-        // Hamburger menu
-        const hamburgerBtn = document.getElementById('hamburgerBtn');
-        const navbar = document.getElementById('navbar');
-
-        if(hamburgerBtn) {
-            hamburgerBtn.addEventListener('click', function() {
-                hamburgerBtn.classList.toggle('active');
-                navbar.classList.toggle('active');
-            });
-        }
-
-        // Cerrar menú al hacer clic en un link
-        const navLinks = document.querySelectorAll('.navbar a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                hamburgerBtn.classList.remove('active');
-                navbar.classList.remove('active');
-            });
-        });
-    </script>
-</body>
 </html>
