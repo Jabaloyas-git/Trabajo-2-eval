@@ -1,4 +1,4 @@
-        /* Variables de color */
+/* Variables de color */
         :root {
             --primary-color: #FF822E;
             --primary-dark: #D15400;
@@ -7,7 +7,7 @@
         }
 
         body {
-            background-color: var(--primary-color);
+            background: linear-gradient(to right, #000000, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), #000000);
             color: var(--text-dark);
         }
 
