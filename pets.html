@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
     <header>
         <nav class="navbar navbar-expand-lg bg-white shadow-sm">
             <div class="container">
@@ -48,7 +48,7 @@
 
             <div class="product-grid">
                 <div class="product-card">
-                    <img src="img/pelotaPerro.png" alt="Pelota Ultra-Resistente">
+                    <img src="img/pelotaPerro.png" alt="Pelota Ultra-Resistente" style="cursor: pointer;" onclick="window.scrollTo(0, 0);">
                     <div class="product-info">
                         <h3>Pelota Ultra-Resistente</h3>
                         <p>Para Perros - Juguetes</p>
@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="product-card">
-                    <img src="img/RatonGato.png" alt="Ratón Interactivo">
+                    <img src="img/RatonGato.png" alt="Ratón Interactivo" style="cursor: pointer;" onclick="window.scrollTo(0, 0);">
                     <div class="product-info">
                         <h3>Ratón Interactivo</h3>
                         <p>Para Gatos - Estimulación</p>
@@ -76,7 +76,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column logo-column">
-                    <strong>Re-Toy-Make</strong>
+                    <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" style="text-decoration: none; color: inherit;"><strong>Re-Toy-Make</strong></a>
                     <p>Juguetería inclusiva para el bienestar de todos.</p>
                 </div>
                 <div class="footer-column">

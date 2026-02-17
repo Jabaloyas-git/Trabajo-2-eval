@@ -6,9 +6,20 @@
             --text-dark: #1A0A00;
         }
 
+        html {
+            height: 100%;
+        }
+
         body {
-            background: linear-gradient(to right, #000000, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), #000000);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(to right, #D15400, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), #D15400);
             color: var(--text-dark);
+        }
+
+        main {
+            flex: 1;
         }
 
         .navbar-brand {
@@ -61,6 +72,14 @@
             height: 200px;
             object-fit: cover;
             border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            cursor: pointer;
+        }
+
+        .hero-images img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
         }
 
         /* CTA Button */
@@ -212,6 +231,7 @@
             background-color: #ffffff;
             padding: 3rem 1rem;
             border-top: 1px solid #eee;
+            margin-top: auto;
         }
 
         .footer-content {
