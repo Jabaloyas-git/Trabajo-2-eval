@@ -114,6 +114,13 @@
             gap: 2rem;
         }
 
+        /* Kids Grid - Centrado */
+        .kids-grid {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 900px;
+            margin: 3rem auto 0;
+        }
+
         .product-card, .story-card {
             background-color: #fff;
             border-radius: 8px;
