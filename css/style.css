@@ -1,9 +1,9 @@
 /* Variables de color */
         :root {
-            --primary-color: #FF822E;
-            --primary-dark: #D15400;
-            --light-cream: #FFF0E6;
-            --text-dark: #1A0A00;
+            --primary-color: #df7731b7;
+            --primary-dark: #f36e01;
+            --light-cream: #ff0000;
+            --text-dark: rgb(61, 53, 44);
         }
 
         html {
@@ -14,7 +14,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: linear-gradient(to right, #D15400, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), #D15400);
+            background: linear-gradient(to right, #b36013, var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), var(--primary-color), #D15400);
             color: var(--text-dark);
         }
 
@@ -51,7 +51,7 @@
         /* Hero Section */
         .hero-content h1 {
             font-size: 3rem;
-            color: #000;
+            color: #ffffff;
         }
 
         .hero-content p {
@@ -73,7 +73,7 @@
             object-fit: cover;
             border-radius: 8px;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
             cursor: pointer;
         }
 
@@ -127,6 +127,9 @@
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             transition: transform 200ms ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .product-card:hover, .story-card:hover {
@@ -146,6 +149,9 @@
 
         .product-info, .story-info {
             padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
         }
 
         .product-info h3, .story-info h3 {
@@ -156,18 +162,35 @@
             font-size: 0.9rem;
         }
 
+        /* Product Footer - Precio y botón lado a lado */
+        .product-footer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: auto;
+            justify-content: space-between;
+        }
+
+        /* Asegura que el botón de acción quede en la parte inferior de la tarjeta */
+        .product-info .cta-button, .story-info .cta-button {
+            margin-top: auto;
+        }
+
         /* Price Badge */
         .price {
-            display: inline-block;
-            background: linear-gradient(90deg, #fff3e0 0%, #ffc371 45%, #ff8a00 100%);
+            display: block;
+            background: linear-gradient(90deg,  #f78121 100%);
             color: var(--text-dark);
             font-size: 1.6rem;
             font-weight: 900;
             padding: 0.55rem 1rem;
             border-radius: 999px;
-            margin: 0.5rem 0;
+            margin: 0;
             border: 1px solid rgba(0, 0, 0, 0.06);
             transition: all 160ms ease;
+            text-align: center;
+            width: fit-content;
+            flex-shrink: 0;
         }
 
         .price:hover {
@@ -175,9 +198,30 @@
             box-shadow: 0 22px 48px rgba(255, 138, 0, 0.22);
         }
 
+        /* Botón Ver Detalle */
+        .btn-details {
+            background: linear-gradient(135deg, #ff8a00 0%, var(--primary-dark) 50%, #ff7043 100%);
+            color: #fff;
+            padding: 0.55rem 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 160ms ease;
+            text-align: center;
+            display: inline-block;
+            border: none;
+        }
+
+        .btn-details:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(211, 84, 0, 0.25);
+            color: #fff;
+        }
+
         /* Newsletter */
         .newsletter {
-            background: linear-gradient(180deg, #000000 0%, #141414 60%, #1f1f1f 100%);
+           
             padding: 3.5rem 1rem;
             text-align: center;
         }
@@ -186,7 +230,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
-            background: linear-gradient(180deg, #fff3e0 0%, #ffb347 55%, #ff8a00 100%);
+            background: linear-gradient(180deg, #fff3e0 0%, #f79e21 55%, #f08205 100%);
             color: #111;
             border-radius: 18px;
             box-shadow: 0 12px 36px rgba(255, 138, 0, 0.14);
@@ -218,7 +262,7 @@
         }
 
         .subscribe-btn {
-            background: linear-gradient(90deg, #00d4b4 0%, #00a896 100%);
+            background: linear-gradient(90deg, #bb00d4 0%, #a8008c 100%);
             color: #fff;
             padding: 0.9rem 1.25rem;
             border-radius: 999px;
@@ -337,3 +381,35 @@
                 max-width: 100%;
             }
         }
+/* Línea divisoria más grande y protagonista */
+.section-divider {
+    height: 9px;                   
+    background: linear-gradient(
+        to right,
+        transparent 10%,
+        #ffa047 25%,                
+        var(--primary-dark) 50%,    
+        transparent 90%
+    );
+    margin: 5rem auto 4.4rem;       
+    max-width: 800px;              
+    border-radius: 4px;            
+    opacity: 0.75;                 
+    box-shadow: 0 4px 12px rgba(253, 101, 0, 0.15);  
+}
+
+
+.section-divider--strong {
+    height: 5px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        var(--primary-color) 30%,
+        var(--primary-dark) 70%,
+        var(--primary-color)
+    );
+    margin: 6rem auto 5rem;
+    max-width: 900px;
+    border-radius: 999px;
+    box-shadow: 0 6px 20px rgba(209, 84, 0, 0.22);
+}
